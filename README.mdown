@@ -1,0 +1,2 @@
+Experimenting with the Roman Numeral kata shared by
+Jim Weirich at SCNA 2011.
