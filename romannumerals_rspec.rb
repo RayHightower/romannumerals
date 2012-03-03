@@ -1,5 +1,5 @@
 #romannumerals_spec
-require_relative 'romannumerals'
+require 'romannumerals'
 
 describe "Roman Numerals" do
 
