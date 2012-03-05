@@ -5,7 +5,7 @@ Jim Weirich at SCNA 2011.
 shows Weirich performing the kata live in front of 200+ audience
 members. Pair programming on a huge scale. No pressure, Jim!
 
-* [Crisp Text Video](http://www.youtube.com/watch?v=VLEgp1189dk). The text
+* [Crisp text by hoserfication](http://www.youtube.com/watch?v=VLEgp1189dk). The text
 in this version of the kata is crisp and clear. Very easy to read and
 follow along.
 
