@@ -1,0 +1,13 @@
+.powenv
+.bundle
+.rvmrc
+db/*.sqlite3
+log/*.log
+tmp/
+.sass-cache/
+.rvmrc
+config/database.yml
+config/initializers/smtp_settings.rb
+smtp_gmail.rb
+coverage/
+public/uploads/
