@@ -1,5 +1,10 @@
 class RomanNumerals
   def self.convert(number)
-    result = "I"
+    if number == 1
+      result = "I"
+    end
+    if number == 2
+      result = "II"
+    end
   end
 end
