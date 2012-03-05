@@ -1,11 +1,11 @@
 Experimenting with the Roman Numeral kata shared by
 Jim Weirich at SCNA 2011. 
 
-* [Weirich Video](http://vimeo.com/33841375). I like this video because it
+* [Weirich Performs Live](http://vimeo.com/33841375). I like this video because it
 shows Weirich performing the kata live in front of 200+ audience
-members. No pressure, Jim!
+members. Pair programming on a huge scale. No pressure, Jim!
 
-* [Clear Text Video](http://www.youtube.com/watch?v=VLEgp1189dk). The text
+* [Crisp Text Video](http://www.youtube.com/watch?v=VLEgp1189dk). The text
 in this version of the kata is crisp and clear. Very easy to read and
 follow along.
 
