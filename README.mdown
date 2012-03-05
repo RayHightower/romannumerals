@@ -1,2 +1,2 @@
 Experimenting with the Roman Numeral kata shared by
-Jim Weirich at SCNA 2011.
+Jim Weirich at SCNA 2011. [Video](http://vimeo.com/33841375)
