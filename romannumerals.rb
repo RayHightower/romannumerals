@@ -1,16 +1,16 @@
 class RomanNumerals
 
-  def self.convert(number)
+  def self.convert(arabic)
     
-    if number == 1
-      result = "I"
+    if arabic == 1
+      roman = "I"
     end
 
-    if number == 2
-      result = "II"
+    if arabic == 2
+      roman = "II"
     end
 
-    return result
+    return roman
 
   end
 
