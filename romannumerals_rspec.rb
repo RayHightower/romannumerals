@@ -8,10 +8,12 @@ describe "Roman Numerals" do
       RomanNumerals.convert(1).should == "I"
     end
   end
+
   context "Convert II" do
-    it "should convert arabic number 2 to Roman Numeral II" do
+    it "should convert arabic number 1 to Roman Numeral I" do
       RomanNumerals.convert(2).should == "II"
     end
   end
+
 end
 
