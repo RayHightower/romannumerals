@@ -6,5 +6,6 @@ class RomanNumerals
     if number == 2
       result = "II"
     end
+    return result
   end
 end
