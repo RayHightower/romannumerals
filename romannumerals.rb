@@ -10,6 +10,10 @@ class RomanNumerals
       roman = "II"
     end
 
+    if arabic == 5
+      roman = "V"
+    end
+
     return roman
 
   end
