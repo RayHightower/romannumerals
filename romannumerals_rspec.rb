@@ -20,5 +20,12 @@ describe "Roman Numerals" do
       RomanNumerals.convert(5).should == "V"
     end
   end
+
+  context "Convert X" do
+    it "should convert arabic number 5 to Roman Numeral X" do
+      RomanNumerals.convert(10).should == "X"
+    end
+  end
+
 end
 
