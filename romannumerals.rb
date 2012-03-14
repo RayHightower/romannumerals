@@ -17,6 +17,10 @@ class RomanNumerals
       roman = "V"
     end
 
+    if arabic == 10 
+      roman = "X"
+    end
+
     return roman
 
   end
