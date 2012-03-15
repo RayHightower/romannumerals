@@ -10,7 +10,7 @@ describe "Roman Numerals" do
   end
 
   context "Convert II" do
-    it "should convert arabic number 1 to Roman Numeral I" do
+    it "should convert arabic number 2 to Roman Numeral I" do
       RomanNumerals.convert(2).should == "II"
     end
   end
@@ -22,10 +22,15 @@ describe "Roman Numerals" do
   end
 
   context "Convert X" do
-    it "should convert arabic number 5 to Roman Numeral X" do
+    it "should convert arabic number 10 to Roman Numeral X" do
       RomanNumerals.convert(10).should == "X"
     end
   end
 
+  context "Convert L" do
+    it "should convert arabic number 50 to Roman Numeral L" do
+      RomanNumerals.convert(50).should == "L"
+    end
+  end
 end
 
