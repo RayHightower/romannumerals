@@ -25,6 +25,10 @@ class RomanNumerals
       roman = "L"
     end
 
+    if arabic == 100 
+      roman = "C"
+    end
+
     return roman
 
   end

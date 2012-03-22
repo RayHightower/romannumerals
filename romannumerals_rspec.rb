@@ -32,5 +32,11 @@ describe "Roman Numerals" do
       RomanNumerals.convert(50).should == "L"
     end
   end
+
+  context "Convert C" do
+    it "should convert arabic number 100 to Roman Numeral C" do
+      RomanNumerals.convert(100).should == "C"
+    end
+  end
 end
 
