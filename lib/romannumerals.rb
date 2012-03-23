@@ -5,33 +5,16 @@ class RomanNumerals
 
   def self.convert(arabic)
     
-    if arabic == 1
-      roman = "I"
-    end
+    return "I" if arabic == 1
+    return "II" if arabic == 2
+    return "III" if arabic == 3
 
-    if arabic == 2
-      roman = "II"
-    end
 
-    if arabic == 5
-      roman = "V"
-    end
-
-    if arabic == 10 
-      roman = "X"
-    end
-
-    if arabic == 50 
-      roman = "L"
-    end
-
-    if arabic == 100 
-      roman = "C"
-    end
-
-    if arabic == 1000
-      roman = "M"
-    end
+    return "V" if arabic == 5
+    return "X" if arabic == 10
+    return "L" if arabic == 50
+    return "C" if arabic == 100
+    return "M" if arabic == 1000
 
     return roman
 
