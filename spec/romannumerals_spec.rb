@@ -16,6 +16,12 @@ describe "Roman Numerals" do
     end
   end
 
+  context "Convert III" do
+    it "should convert arabic number 3 to Roman Numeral III" do
+      RomanNumerals.convert(3).should == "III"
+    end
+  end
+
   context "Convert V" do
     it "should convert arabic number 5 to Roman Numeral V" do
       RomanNumerals.convert(5).should == "V"
@@ -45,5 +51,6 @@ describe "Roman Numerals" do
       RomanNumerals.convert(1000).should == "M"
     end
   end
+
 end
 
