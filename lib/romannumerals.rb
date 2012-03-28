@@ -13,6 +13,11 @@ class RomanNumerals
     return "C" if arabic == 100
     return "M" if arabic == 1000
 
+    while arabic >= 10
+      romanresult += "X"
+      arabic -= 10
+    end
+
     while arabic >= 1
       romanresult += "I"
       arabic -= 1

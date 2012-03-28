@@ -34,6 +34,18 @@ describe "Roman Numerals" do
     end
   end
 
+  context "Convert XX" do
+    it "should convert arabic number 20 to Roman Numeral XX" do
+      RomanNumerals.convert(20).should == "XX"
+    end
+  end
+
+  context "Convert XXI" do
+    it "should convert arabic number 21 to Roman Numeral XXI" do
+      RomanNumerals.convert(21).should == "XXI"
+    end
+  end
+
   context "Convert L" do
     it "should convert arabic number 50 to Roman Numeral L" do
       RomanNumerals.convert(50).should == "L"
