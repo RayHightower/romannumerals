@@ -7,9 +7,25 @@ class RomanNumerals
     
     romanresult = ""
 
-    return "L" if arabic == 50
-    return "C" if arabic == 100
-    return "M" if arabic == 1000
+    if arabic >= 3000
+      romanresult += "Nothing larger than Arabic 3,000, please!"
+      arabic = 0
+    end
+    
+    while arabic >= 1000
+      romanresult += "M"
+      arabic -= 1000
+    end
+
+    while arabic >= 100
+      romanresult += "C"
+      arabic -= 100
+    end
+
+    while arabic >= 50
+      romanresult += "L"
+      arabic -= 50
+    end
 
     while arabic >= 10
       romanresult += "X"

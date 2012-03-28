@@ -5,62 +5,74 @@ require_relative '../lib/romannumerals'
 describe "Roman Numerals" do
 
   context "Convert I" do
-    it "should convert arabic number 1 to Roman Numeral I" do
+    it "should convert Arabic number 1 to Roman Numeral I" do
       RomanNumerals.convert(1).should == "I"
     end
   end
 
   context "Convert II" do
-    it "should convert arabic number 2 to Roman Numeral I" do
+    it "should convert Arabic number 2 to Roman Numeral I" do
       RomanNumerals.convert(2).should == "II"
     end
   end
 
   context "Convert III" do
-    it "should convert arabic number 3 to Roman Numeral III" do
+    it "should convert Arabic number 3 to Roman Numeral III" do
       RomanNumerals.convert(3).should == "III"
     end
   end
 
   context "Convert V" do
-    it "should convert arabic number 5 to Roman Numeral V" do
+    it "should convert Arabic number 5 to Roman Numeral V" do
       RomanNumerals.convert(5).should == "V"
     end
   end
 
   context "Convert X" do
-    it "should convert arabic number 10 to Roman Numeral X" do
+    it "should convert Arabic number 10 to Roman Numeral X" do
       RomanNumerals.convert(10).should == "X"
     end
   end
 
   context "Convert XX" do
-    it "should convert arabic number 20 to Roman Numeral XX" do
+    it "should convert Arabic number 20 to Roman Numeral XX" do
       RomanNumerals.convert(20).should == "XX"
     end
   end
 
   context "Convert XXI" do
-    it "should convert arabic number 21 to Roman Numeral XXI" do
+    it "should convert Arabic number 21 to Roman Numeral XXI" do
       RomanNumerals.convert(21).should == "XXI"
     end
   end
 
   context "Convert L" do
-    it "should convert arabic number 50 to Roman Numeral L" do
+    it "should convert Arabic number 50 to Roman Numeral L" do
       RomanNumerals.convert(50).should == "L"
     end
   end
 
   context "Convert C" do
-    it "should convert arabic number 100 to Roman Numeral C" do
+    it "should convert Arabic number 100 to Roman Numeral C" do
       RomanNumerals.convert(100).should == "C"
     end
   end
   
   context "Convert M" do
-    it "should convert arabic number 1000 to Roman Numeral M" do
+    it "should convert Arabic number 1000 to Roman Numeral M" do
       RomanNumerals.convert(1000).should == "M"
+    end
+  end
+
+  context "Convert MMX" do
+    it "should convert Arabic number 2010 to Roman Numeral MMX" do
+      RomanNumerals.convert(2010).should == "MMX"
+    end
+  end
+
+  context "Handle overflow: Nothing bigger than 3000" do
+    it "should tell users to stay below 3000" do
+      RomanNumerals.convert(3001).should == "Nothing larger than Arabic 3,000, please!"
     end
   end
 
