@@ -76,5 +76,29 @@ describe "Roman Numerals" do
     end
   end
 
+  context "Deal with subtraction: IV, CM, etc." do
+    it "should handle numbers ending in Arabic 4" do
+      RomanNumerals.convert(4).should == "IV"
+    end
+    it "should handle numbers ending in Arabic 14" do
+      RomanNumerals.convert(14).should == "XIV"
+    end
+    it "should handle numbers ending in Arabic 24" do
+      RomanNumerals.convert(24).should == "XXIV"
+    end
+    it "should handle numbers with Arabic 4 in the tens digit" do
+      RomanNumerals.convert(40).should == "XL"
+    end
+    it "should handle 41" do
+      RomanNumerals.convert(41).should == "XLI"
+    end
+    it "should handle 91" do
+      RomanNumerals.convert(91).should == "XCI"
+    end
+    it "should handle 901" do
+      RomanNumerals.convert(901).should == "CMI"
+    end
+  end
+
 end
 
