@@ -7,8 +7,13 @@ class RomanNumerals
     
     romanresult = ""
 
-    if arabic >= 3000
-      romanresult += "Nothing larger than Arabic 3,000, please!"
+    if arabic == 0
+      romanresult = "Romans did not have a symbol for zero."
+      arabic = 0
+    end
+    
+    if arabic > 3000
+      romanresult = "Nothing larger than Arabic 3,000, please!"
       arabic = 0
     end
     
@@ -20,6 +25,16 @@ class RomanNumerals
     if arabic >= 900
       romanresult += "CM"
       arabic -= 900
+    end
+
+    while arabic >= 500
+      romanresult += "D"
+      arabic -= 500
+    end
+
+    if arabic >= 400
+      romanresult += "CD"
+      arabic -= 400
     end
 
     while arabic >= 100

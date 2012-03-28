@@ -98,6 +98,12 @@ describe "Roman Numerals" do
     it "should handle 901" do
       RomanNumerals.convert(901).should == "CMI"
     end
+    it "should handle 401" do
+      RomanNumerals.convert(401).should == "CDI"
+    end
+    it "should handle 500" do
+      RomanNumerals.convert(500).should == "D"
+    end
   end
 
 end
