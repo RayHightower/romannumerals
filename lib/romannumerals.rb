@@ -1,7 +1,7 @@
 # Adding a line to check autotest.
 # another test.
 #
-class RomanNumerals
+class RomanNumeral
 
   def self.convert(arabic)
     
