@@ -1,6 +1,6 @@
 # Yet another test.
 #romannumerals_spec
-require_relative '../lib/romannumerals'
+require_relative '../lib/romannumeral'
 
 describe "Roman Numerals" do
 
