@@ -7,6 +7,8 @@ class RomanNumeral
     
     romanresult = ""
 
+    romanhash = { 10 => "X", 5 => "V", 1 => "I" }
+
     if arabic == 0
       romanresult = "Romans did not have a symbol for zero."
       arabic = 0
