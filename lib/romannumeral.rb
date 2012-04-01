@@ -3,11 +3,11 @@
 #
 class RomanNumeral
 
+  NUMERALS = { 50 => "L", 40 => "XL", 10 => "X", 9 => "IX", 5 => "V", 4 => "IV", 1 => "I" }
+      
   def self.convert(arabic)
     
     romanresult = ""
-
-    romanhash = { 10 => "X", 5 => "V", 1 => "I" }
 
     if arabic == 0
       romanresult = "Romans did not have a symbol for zero."
