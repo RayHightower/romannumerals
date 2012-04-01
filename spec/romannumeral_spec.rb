@@ -4,19 +4,13 @@ require_relative '../lib/romannumeral'
 
 describe "Roman Numerals" do
 
-  context "Convert I" do
+  context "Convert I, II, & III" do
     it "should convert Arabic number 1 to Roman Numeral I" do
       RomanNumeral.convert(1).should == "I"
     end
-  end
-
-  context "Convert II" do
     it "should convert Arabic number 2 to Roman Numeral I" do
       RomanNumeral.convert(2).should == "II"
     end
-  end
-
-  context "Convert III" do
     it "should convert Arabic number 3 to Roman Numeral III" do
       RomanNumeral.convert(3).should == "III"
     end
@@ -28,13 +22,10 @@ describe "Roman Numerals" do
     end
   end
 
-  context "Convert X" do
+  context "Convert X, XX, and XXX" do
     it "should convert Arabic number 10 to Roman Numeral X" do
       RomanNumeral.convert(10).should == "X"
     end
-  end
-
-  context "Convert XX" do
     it "should convert Arabic number 20 to Roman Numeral XX" do
       RomanNumeral.convert(20).should == "XX"
     end
