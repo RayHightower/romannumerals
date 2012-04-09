@@ -19,6 +19,7 @@ class RomanNumeral
       arabic = 0
     end
     
+
     while arabic >= 1000
       romanresult += "M"
       arabic -= 1000
@@ -49,39 +50,11 @@ class RomanNumeral
       arabic -= 90
     end
 
-    while arabic >= 50
-      romanresult += "L"
-      arabic -= 50
-    end
-
-    if arabic >= 40
-      romanresult += "XL"
-      arabic -= 40
-    end
-
-    while arabic >= 10
-      romanresult += "X"
-      arabic -= 10
-    end
-
-    if arabic == 9
-      romanresult += "IX"
-      arabic -= 9
-    end
-
-    while arabic >= 5
-      romanresult += "V"
-      arabic -= 5
-    end
-
-    while arabic == 4
-      romanresult += "IV"
-      arabic -= 4
-    end
-
-    while arabic >= 1
-      romanresult += "I"
-      arabic -= 1
+    ROMANNUMERALS.each do |arabiceq, roman|
+      while arabic >= arabiceq
+       romanresult += roman
+       arabic -= arabiceq
+      end
     end
 
     return romanresult
