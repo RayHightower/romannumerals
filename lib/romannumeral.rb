@@ -9,8 +9,8 @@ class RomanNumeral
     
     romanresult = ""
 
-    if arabic == 0
-      romanresult = "Romans did not have a symbol for zero."
+    if arabic < 1
+      romanresult = "Nothing smaller than Arabic 0, please!"
       arabic = 0
     end
     

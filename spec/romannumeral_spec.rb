@@ -34,9 +34,12 @@ describe "Roman Numerals" do
     end
   end
 
-  context "Handle overflow: Nothing bigger than 3000" do
+  context "Handle underflow and overflow: Nothing less than 1 or greater than 3000." do
     it "should tell users to stay below 3000" do
       RomanNumeral.convert(3001).should == "Nothing larger than Arabic 3,000, please!"
+    end
+    it "should tell users to stay above zero" do
+      RomanNumeral.convert(-1).should == "Nothing smaller than Arabic 0, please!"
     end
   end
 
