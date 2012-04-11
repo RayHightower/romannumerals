@@ -8,3 +8,6 @@ live in front of 200+ audience members at SCNA 2011. Pair programming on a huge 
 in this version of the kata is crisp and clear. Very easy to read and
 follow along.
 
+Note: Put .rspec file in each "kataNN" directory to make sure that
+autotest runs properly.
+
