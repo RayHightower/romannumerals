@@ -14,16 +14,6 @@ describe "Roman Numerals" do
         RomanNumeral.convert(arabic).should == roman
       end
     end
-
-    it "should convert Arabic number 1 to Roman Numeral I" do
-      RomanNumeral.convert(1).should == "I"
-    end
-    it "should convert Arabic number 2 to Roman Numeral I" do
-      RomanNumeral.convert(2).should == "II"
-    end
-    it "should convert Arabic number 3 to Roman Numeral III" do
-      RomanNumeral.convert(3).should == "III"
-    end
   end
 
   context "Convert RANDOMROMAN symbols one at a time" do
