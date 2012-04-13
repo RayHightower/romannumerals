@@ -13,4 +13,14 @@ describe "Arabic to Roman" do
       Arabic2Roman.convert(3).should == "III"
     end
   end
+  context "Convert Arabic 5 to V" do
+    it "should convert Arabic 5 to Roman V" do
+      Arabic2Roman.convert(5).should == "V"
+    end
+  end
+  context "Convert Arabic 10 to X" do
+    it "should convert Arabic 10 to Roman X" do
+      Arabic2Roman.convert(10).should == "X"
+    end
+  end
 end
