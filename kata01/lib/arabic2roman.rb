@@ -4,8 +4,25 @@ class Arabic2Roman
 
     roman = ""
 
+    return "Overflow." if arabic > 3000
+    return "Nothing less than one." if arabic < 1
 
-    if arabic >= 100
+    while arabic >= 1000
+      roman += "M"
+      arabic -= 1000
+    end
+
+    if arabic >= 900
+      roman += "CM"
+      arabic -= 900
+    end
+
+    while arabic >= 500
+      roman += "D"
+      arabic -= 500
+    end
+    
+    while arabic >= 100
       roman += "C"
       arabic -= 100
     end
