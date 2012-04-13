@@ -1,6 +1,6 @@
 class Arabic2Roman
 
-  def convert (arabic)
+  def self.convert (arabic)
 
     return "I"
 
