@@ -4,9 +4,26 @@ class Arabic2Roman
 
     roman = ""
 
-    return "V" if arabic == 5
-    return "X" if arabic == 10
-    return "L" if arabic == 50
+
+    if arabic >= 100
+      roman += "C"
+      arabic -= 100
+    end
+    
+    if arabic >= 90
+      roman += "XC"
+      arabic -= 90
+    end
+    
+    if arabic >= 50
+      roman += "L"
+      arabic -= 50
+    end
+    
+    if arabic >= 40
+      roman += "XL"
+      arabic -= 40
+    end
 
     while arabic >= 10
       roman += "X"
