@@ -1,11 +1,29 @@
 class Arabic2Roman
 
+
+A2RTABLE = { 40 => "XL", 10 => "X", 9 => "IX", 5 => "V", 4 => "IV", 1 => "I" }
+  
   def self.convert(arabic)
     roman = ""
 
-    if arabic == 10
+    A2RTABLE.each do |avalue, rvalue|
+      while arabic >= avalue do
+        roman += rvalue
+        arabic -= avalue
+      end
+    end
+
+    return roman
+
+
+    while arabic >= 10
       roman += "X"
       arabic -= 10
+    end
+
+    if arabic == 9
+      roman += "IX"
+      arabic -= 9
     end
 
     if arabic == 5

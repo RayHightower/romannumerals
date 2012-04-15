@@ -1,9 +1,9 @@
 require_relative '../lib/arabic2roman'
 
 ROMANTABLE = { 1 => "I", 2 => "II", 4 => "IV", 5 => "V", 9 => "IX",
-               10 => "X" }
+               10 => "X", 14 => "XIV", 19 => "XIX", 24 => "XXIV", 40 => "XL" }
 
-describe "Start with 1" do
+describe "Work our way through ROMANTABLE" do
 
   ROMANTABLE.each do |arabic, roman| 
 
