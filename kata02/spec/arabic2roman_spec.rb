@@ -1,9 +1,9 @@
 require_relative '../lib/arabic2roman'
 
 ROMANTABLE = { 1 => "I", 2 => "II", 4 => "IV", 5 => "V", 9 => "IX",
-               10 => "X", 14 => "XIV", 19 => "XIX", 24 => "XXIV", 40 => "XL", 50 => "L", 
+               10 => "X", 14 => "XIV", 19 => "XIX", 24 => "XXIV", 40 => "XL", 50 => "L", 99 => "XCIX",
                100 => "C", 400 => "CD", 500 => "D",
-               1000 => "M", 3000 => "MMM" } 
+               1000 => "M", 2000 => "MM", 3000 => "MMM" } 
 
 
 describe "Test a bunch of edge cases." do
