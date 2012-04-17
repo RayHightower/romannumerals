@@ -9,4 +9,12 @@ describe 'it should convert according to the ROMANTESTSUBJECTS table' do
       Arabic2Roman.convert(arabic).should == roman
     end
   end
+
+  it "should handle overflow" do
+    Arabic2Roman.convert(3001).should == "Overflow."
+  end
+
+  it "should handle underflow" do
+    Arabic2Roman.convert(0).should == "Underflow."
+  end
 end

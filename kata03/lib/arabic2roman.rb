@@ -6,6 +6,9 @@ class Arabic2Roman
 
     roman = ""
 
+    return "Overflow." if arabic > 3000
+    return "Underflow." if arabic < 1
+
     ARABIC2ROMANTABLE.each do |arabictab, romantab|
 
       while arabic >= arabictab
