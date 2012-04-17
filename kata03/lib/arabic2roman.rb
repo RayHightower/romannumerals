@@ -2,8 +2,14 @@ class Arabic2Roman
 
   def self.convert(arabic)
 
-    return "I" if arabic == 1 
-    return "II" if arabic == 2 
+    roman = ""
+
+    while arabic >= 1 do
+      roman += "I"
+      arabic -= 1
+    end
+    
+    return roman
 
   end
 end
