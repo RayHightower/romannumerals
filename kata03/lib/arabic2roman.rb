@@ -8,7 +8,7 @@ class Arabic2Roman
 
     ARABIC2ROMANTABLE.each do |arabictab, romantab|
 
-      while arabictab >= romantab
+      while arabic >= arabictab
         roman += romantab
         arabic -= arabictab
       end
