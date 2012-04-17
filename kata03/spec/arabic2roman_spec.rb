@@ -1,10 +1,11 @@
 require_relative '../lib/arabic2roman'
 
-describe 'it should convert 1 to I' do
-  it "should convert Arabic 1 to Roman I" do
-    Arabic2Roman.convert(1).should == "I"
-  end
-  it "should convert Arabic 2 to Roman II" do
-    Arabic2Roman.convert(2).should == "II"
+ROMANTESTSUBJECTS = { 1 => "I", 2 => "II", 3 => "III" }
+
+describe 'it should convert according to the ROMANTESTSUBJECTS table' do
+  ROMANTESTSUBJECTS.each do |arabic, roman|
+    it "should convert Arabic to Roman" do
+      Arabic2Roman.convert(arabic).should == roman
+    end
   end
 end
