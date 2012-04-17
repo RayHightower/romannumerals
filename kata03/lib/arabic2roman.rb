@@ -4,6 +4,11 @@ class Arabic2Roman
 
     roman = ""
 
+    if arabic == 4
+      roman += "IV"
+      arabic -= 4
+    end
+
     while arabic >= 1 do
       roman += "I"
       arabic -= 1
