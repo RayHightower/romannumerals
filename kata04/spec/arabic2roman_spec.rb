@@ -1,6 +1,6 @@
 require_relative '../lib/arabic2roman'
 
-ARABIC2ROMANTABLE = { 1 => "I", 3 => "III", 4 => "IV", 5 => "IV", 9 => "IX", 10 => "X", 30 => "XXX" }
+ARABIC2ROMANTABLE = { 1 => "I", 3 => "III", 4 => "IV", 5 => "V", 9 => "IX", 10 => "X", 30 => "XXX" }
 
 describe "let's run the tests through a loop" do
 
