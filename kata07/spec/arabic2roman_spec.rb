@@ -1,10 +1,12 @@
 require_relative '../lib/arabic2roman'
 
-describe 'create the first test, and make it fail' do
-  it 'should return I for 1' do
-    Arabic2Roman.calc(1).should == 'I'
-  end
-  it 'should return II for 2' do
-    Arabic2Roman.calc(2).should == 'II'
+ARABICCONV = { 1 => 'I', 2 => 'II', 4 => 'IV', 5 => 'V' }
+
+describe 'go thru ARABICCONV and test each one' do
+  ARABICCONV.each do |arabic, roman| 
+    it 'should return Roman for Arabic' do
+      Arabic2Roman.calc(arabic).should == roman
+    end
   end
 end
+
