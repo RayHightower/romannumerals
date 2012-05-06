@@ -1,22 +1,16 @@
 class Arabic2Roman
 
+  CONVERTERS = { 10 => 'X', 9 => 'IX', 5 => 'V', 4 => 'IV', 1 => 'I' }
+  
   def self.calc(arabic)
 
     roman = ''
 
-    while arabic >= 5
-      roman += 'V'
-      arabic -= 5
-    end
-
-    while arabic >= 4
-      roman += 'IV'
-      arabic -= 4
-    end
-
-    while arabic >= 1
-      roman += 'I'
-      arabic -= 1
+    CONVERTERS.each do |arabicconv, romanconv|
+      while arabic >= arabicconv
+        roman += romanconv
+        arabic -= arabicconv
+      end
     end
 
     return roman
