@@ -7,6 +7,16 @@ class Arabic2Roman
 
     roman = ''
 
+    if arabic < 1
+      roman = 'Nothing less than Arabic 1 allowed.'
+      arabic = 0
+    end
+
+    if arabic > 3000
+      roman = 'Nothing greater than Arabic 3,000 allowed.'
+      arabic = 0
+    end
+
     CONVERTERS.each do |arabicconv, romanconv|
       while arabic >= arabicconv
         roman += romanconv
