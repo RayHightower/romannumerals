@@ -29,7 +29,7 @@ class Arabic2Roman
 
     CONVERTERS.each do |arabicconv, romanconv|
       while arabic >= arabicconv
-        roman += romanconv
+        roman << romanconv
         arabic -= arabicconv
       end
     end
