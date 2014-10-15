@@ -11,7 +11,7 @@ describe "Roman Numerals" do
 
     ROMANNUMERALS.each do |arabic, roman|
       it "should convert Arabic number n to the corresponding Roman Numerals." do
-        RomanNumeral.convert(arabic+1).should == roman
+        expect(RomanNumeral.convert(arabic)).to eq roman
       end
     end
   end
