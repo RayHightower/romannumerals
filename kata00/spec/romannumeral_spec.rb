@@ -29,7 +29,7 @@ describe "Roman Numerals" do
       expect(RomanNumeral.convert(3001)).to eq "Nothing larger than Arabic 3,000, please!"
     end
     it "should tell users to stay above zero" do
-      RomanNumeral.convert(-1).should == "Nothing smaller than Arabic 0, please!"
+      expect(RomanNumeral.convert(-1)).to eq "Nothing smaller than Arabic 0, please!"
     end
   end
 
