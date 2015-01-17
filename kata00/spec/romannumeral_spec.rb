@@ -19,14 +19,14 @@ describe "Roman Numerals" do
   context "Convert RANDOMROMAN symbols one at a time" do
     RANDOMROMAN.each do |arabic, roman|
       it "should convert Arabic number n to the corresponding Roman Numerals." do
-        RomanNumeral.convert(arabic).should == roman
+        expect(RomanNumeral.convert(arabic)).to eq roman
       end
     end
   end
 
   context "Handle underflow and overflow: Nothing less than 1 or greater than 3000." do
     it "should tell users to stay below 3000" do
-      RomanNumeral.convert(3001).should == "Nothing larger than Arabic 3,000, please!"
+      expect(RomanNumeral.convert(3001)).to eq "Nothing larger than Arabic 3,000, please!"
     end
     it "should tell users to stay above zero" do
       RomanNumeral.convert(-1).should == "Nothing smaller than Arabic 0, please!"
