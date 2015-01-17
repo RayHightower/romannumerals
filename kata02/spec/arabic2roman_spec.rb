@@ -20,9 +20,9 @@ end
 
 describe "Handle overflow and underflow." do
   it "should tell us when we've hit overflow" do
-    Arabic2Roman.convert(3001).should == "Overflow. Nothing larger than 3000."
+    expect(Arabic2Roman.convert(3001)).to eq "Overflow. Nothing larger than 3000."
   end
   it "should tell us when we've hit underflow" do
-    Arabic2Roman.convert(-1).should == "Underflow. Nothing less than zero."
+    expect(Arabic2Roman.convert(-1)).to eq "Underflow. Nothing less than zero."
   end
 end
