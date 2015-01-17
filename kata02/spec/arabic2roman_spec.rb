@@ -11,7 +11,7 @@ describe "Test a bunch of edge cases." do
   ROMANTABLE.each do |arabic, roman| 
 
     it "should convert Arabic to Roman according to the table." do
-      Arabic2Roman.convert(arabic).should == roman
+      expect(Arabic2Roman.convert(arabic)).to eq roman
     end
 
   end
