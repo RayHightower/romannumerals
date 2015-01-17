@@ -17,7 +17,7 @@ describe "Arabic to Roman" do
 
   ROMANLIST.each do |arabic, roman|
     it "should convert Arabic to Roman from the list" do
-      Arabic2Roman.convert(arabic).should == roman
+      expect(Arabic2Roman.convert(arabic)).to eq roman
     end
   end
 
