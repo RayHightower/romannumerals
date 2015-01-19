@@ -14,9 +14,9 @@ end
 
 describe "handle overflow and underflow" do
   it "should handle overflow" do
-    Arabic2Roman.convert(3001).should == "Overflow."
+    expect(Arabic2Roman.convert(3001)).to eq "Overflow."
   end
   it "should handle underflow" do
-    Arabic2Roman.convert(0).should == "Underflow."
+    expect(Arabic2Roman.convert(0)).to eq "Underflow."
   end
 end
