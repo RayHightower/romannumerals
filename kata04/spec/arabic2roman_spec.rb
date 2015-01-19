@@ -7,7 +7,7 @@ describe "let's run the tests through a loop" do
 
   ARABIC2ROMANTABLE.each do |arabtab, romantab|
     it "should convert Arabic to Roman" do
-      Arabic2Roman.convert(arabtab).should == romantab
+      expect(Arabic2Roman.convert(arabtab)).to eq romantab
     end
   end
 end
