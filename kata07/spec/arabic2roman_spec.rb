@@ -7,17 +7,17 @@ require_relative '../lib/arabic2roman'
 
 describe 'handle greater than 3,000 and less than zero' do
   it 'should return feedback for less than one' do
-    Arabic2Roman.calc(0).should == 'Nothing less than Arabic 1 allowed.'
+    expect(Arabic2Roman.calc(0)).to eq 'Nothing less than Arabic 1 allowed.'
   end
   it 'should return feedback for greater than 3,000' do
-    Arabic2Roman.calc(3001).should == 'Nothing greater than Arabic 3,000 allowed.'
+    expect(Arabic2Roman.calc(3001)).to eq 'Nothing greater than Arabic 3,000 allowed.'
   end
 end
 
 describe 'go thru ARABICCONV and test each' do
   ARABICCONV.each do |arabic, roman| 
     it 'should return Roman for Arabic' do
-      Arabic2Roman.calc(arabic).should == roman
+      expect(Arabic2Roman.calc(arabic)).to eq roman
     end
   end
 end
